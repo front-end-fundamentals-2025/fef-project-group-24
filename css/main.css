@@ -1,0 +1,49 @@
+/* header */
+.container-header {
+  display: flex;
+  gap: 1rem;
+}
+
+header {
+  background-color: rgb(85, 61, 163);
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+}
+
+nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: white;
+  margin: 1rem;
+}
+
+/* main */
+.container {
+  display: grid;
+  grid-template-areas: "right left";
+  gap: 1rem;
+}
+
+.right {
+  background-color: rgb(211, 163, 255);
+  border-radius: 0.2rem;
+  height: 50rem;
+}
+
+.left {
+  background-color: rgb(147, 255, 151);
+  border-radius: 0.2rem;
+  height: 50rem;
+}
+
+/* footer */
+footer {
+  background-color: rgb(85, 61, 163);
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+}
