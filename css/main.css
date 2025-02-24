@@ -1,7 +1,6 @@
 /* header */
 .container-header {
   display: flex;
-  gap: 1rem;
 }
 
 header {
@@ -12,39 +11,77 @@ header {
 }
 
 #logo {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.4rem;
   color: white;
+  font-family: "Cinzel Decorative", serif;
+  margin: 0;
+  margin-left: 0;
+
+  height: 3rem;
+}
+
+#logo-f {
+  font-size: 2.4rem;
+  color: white;
+  font-family: "Cinzel", serif;
+  margin: 0;
+  margin-right: 0;
+  height: 3rem;
+}
+
+.container-logo {
+  display: flex;
+  height: 3rem;
+  margin-top: 1.7rem;
 }
 
 nav {
-  padding-top: 1.7rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 a {
+  text-decoration: none;
   color: white;
   margin: 1rem;
+}
+
+ul {
+  padding: 0;
+}
+
+.navigation {
+  width: 1.8rem;
+}
+
+.navigation-spy {
+  width: 1.35rem;
+}
+
+.navigation-shopping {
+  width: 2.2rem;
+}
+
+.navigation-login {
+  width: 2.1rem;
 }
 
 /* main */
 .container {
   display: grid;
-  grid-template-areas: "right left";
+  grid-template-areas: "left right";
   gap: 1rem;
 }
 
-.right {
-  background-color: rgb(211, 163, 255);
+.left {
+  background-color: rgb(238, 221, 255);
   border-radius: 0.2rem;
-  height: 50rem;
   justify-content: center;
 }
 
-.left {
-  background-color: rgb(147, 255, 151);
+.right {
+  background-color: rgb(221, 255, 222);
   border-radius: 0.2rem;
-  height: 50rem;
 }
 
 .container-text {
@@ -53,14 +90,54 @@ a {
 }
 
 .home-text {
+  padding-left: 1.9rem;
+  font-family: "Karla", serif;
+  width: 25rem;
+}
+
+.home-title {
+  font-size: 2rem;
+}
+
+.home-button {
+  width: 12rem;
+  height: 4rem;
+  font-family: "Karla", serif;
+  font-size: 1.1rem;
+  background-color: rgb(85, 61, 163);
+  border-radius: 0.4rem;
+  border: solid rgb(85, 61, 163);
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.home-button:hover {
+  background-color: white;
+  color: rgb(85, 61, 163);
+}
+
+.home-b {
+  display: block;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 12rem;
+  height: 4rem;
 }
 
 /* footer */
 footer {
   background-color: rgb(85, 61, 163);
+  color: white;
+  font-family: "Karla", serif;
   margin-top: 1rem;
   padding: 0.8rem;
+  padding-left: 1.9rem;
   border-radius: 0.2rem;
+}
+
+footer p {
+  margin: 0;
 }
 
 /* Categories */
@@ -71,9 +148,15 @@ footer {
     " img img img img";
 }
 
+.categories {
+  background-color: chartreuse;
+}
+
+/*
 section a {
   background-color: chartreuse;
 }
+*/
 
 figure {
   grid-area: img;
@@ -85,4 +168,8 @@ figure {
   grid-template-areas:
     " img img img img img "
     " img img img img img ";
+}
+
+.products {
+  background-color: antiquewhite;
 }
