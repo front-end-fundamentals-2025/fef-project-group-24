@@ -11,8 +11,14 @@ header {
   border-radius: 0.2rem;
 }
 
+#logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
 nav {
-  padding-top: 1rem;
+  padding-top: 1.7rem;
   padding-bottom: 1rem;
 }
 
@@ -32,6 +38,7 @@ a {
   background-color: rgb(211, 163, 255);
   border-radius: 0.2rem;
   height: 50rem;
+  justify-content: center;
 }
 
 .left {
@@ -40,10 +47,42 @@ a {
   height: 50rem;
 }
 
+.container-text {
+  display: grid;
+  grid-template-areas: ". text .";
+}
+
+.home-text {
+}
+
 /* footer */
 footer {
   background-color: rgb(85, 61, 163);
   margin-top: 1rem;
   padding: 0.8rem;
   border-radius: 0.2rem;
+}
+
+/* Categories */
+.container-categories {
+  display: grid;
+  grid-template-areas:
+    " img img img img"
+    " img img img img";
+}
+
+section a {
+  background-color: chartreuse;
+}
+
+figure {
+  grid-area: img;
+}
+
+/* Products */
+.container-products {
+  display: grid;
+  grid-template-areas:
+    " img img img img img "
+    " img img img img img ";
 }
