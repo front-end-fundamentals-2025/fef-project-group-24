@@ -146,20 +146,115 @@ footer p {
   grid-template-areas:
     " img img img img"
     " img img img img";
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+#cat-title {
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .categories {
-  background-color: chartreuse;
+  background-color: white;
+  color: black;
+  height: 5rem;
+  width: 10rem;
+  transition-duration: 0.3s;
+  text-align: center;
+  margin: 0;
 }
 
-/*
-section a {
-  background-color: chartreuse;
+.cat {
+  font-family: "Karla", serif;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
 }
-*/
+/* changing color on hover */
+#fantasy {
+  border-radius: 0.4rem;
+  border: solid rgb(158, 157, 160);
+}
 
-figure {
-  grid-area: img;
+#fantasy:hover {
+  background-color: rgb(101, 179, 101);
+  border: solid rgb(101, 179, 101);
+}
+
+#romance {
+  border: solid rgb(158, 157, 160);
+  border-radius: 0.4rem;
+}
+
+#romance:hover {
+  background-color: lightpink;
+  border: solid lightpink;
+}
+
+#thrillers {
+  border: solid rgb(158, 157, 160);
+  border-radius: 0.4rem;
+}
+
+#thrillers:hover {
+  background-color: darkgrey;
+  border: solid darkgray;
+}
+
+#horror {
+  border: solid rgb(158, 157, 160);
+  border-radius: 0.4rem;
+}
+
+#horror:hover {
+  background-color: rgb(200, 96, 96);
+  border: solid rgb(200, 96, 96);
+}
+
+#mystery {
+  border: solid rgb(158, 157, 160);
+  border-radius: 0.4rem;
+}
+
+#mystery:hover {
+  background-color: rgb(124, 140, 191);
+  border: solid rgb(124, 140, 191);
+}
+
+#mythology {
+  border: solid rgb(158, 157, 160);
+  border-radius: 0.4rem;
+}
+
+#mythology:hover {
+  background-color: rgb(197, 160, 221);
+  border: solid rgb(197, 160, 221);
+}
+
+#historical {
+  border: solid rgb(158, 157, 160);
+  border-radius: 0.4rem;
+}
+
+#historical:hover {
+  background-color: rgb(235, 209, 142);
+  border: solid rgb(235, 209, 142);
+}
+
+#sci-fi {
+  border: solid rgb(158, 157, 160);
+  border-radius: 0.4rem;
+}
+
+#sci-fi:hover {
+  background-color: lightsteelblue;
+  border: solid lightsteelblue;
+}
+
+#cat-footer {
+  margin-top: 3rem;
 }
 
 /* Products */
