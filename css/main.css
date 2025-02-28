@@ -4,19 +4,18 @@
 }
 
 header {
-  background-color: rgb(85, 61, 163);
+  background-color: rgb(10, 40, 91);
   margin-bottom: 1rem;
   padding: 0.8rem;
-  border-radius: 0.2rem;
 }
 
 #logo {
   font-size: 2.4rem;
   color: white;
   font-family: "Cinzel Decorative", serif;
+  font-weight: bold;
   margin: 0;
   margin-left: 0;
-
   height: 3rem;
 }
 
@@ -24,6 +23,7 @@ header {
   font-size: 2.4rem;
   color: white;
   font-family: "Cinzel", serif;
+  font-weight: bold;
   margin: 0;
   margin-right: 0;
   height: 3rem;
@@ -67,6 +67,10 @@ ul {
 }
 
 /* main */
+body {
+  margin: 0;
+}
+
 .container {
   display: grid;
   grid-template-areas: "left right";
@@ -133,7 +137,6 @@ footer {
   margin-top: 1rem;
   padding: 0.8rem;
   padding-left: 1.9rem;
-  border-radius: 0.2rem;
 }
 
 footer p {
@@ -148,13 +151,14 @@ footer p {
     " img img img img";
   gap: 0.7rem;
   justify-content: center;
+  margin-top: 2.7rem;
 }
 
 #cat-title {
   text-align: center;
   font-family: "Cinzel Decorative", serif;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.3rem;
 }
 
 .categories {
@@ -257,14 +261,98 @@ footer p {
   margin-top: 3rem;
 }
 
+.book-header-fig {
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.book-header {
+  width: 100%;
+}
+
+.line-fig {
+  height: 2rem;
+  width: 25rem;
+  margin: auto;
+}
+
+.line {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 /* Products */
 .container-products {
   display: grid;
   grid-template-areas:
-    " img img img img img "
-    " img img img img img ";
+    " img img img img"
+    " img img img img"
+    "img img img img";
+  justify-content: center;
+  gap: 1rem;
 }
 
 .products {
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.3rem;
+  border-color: rgba(230, 230, 230, 0.642);
+  border-style: solid;
+  box-shadow: 2px 2px 2px rgba(180, 180, 180, 0.645);
+  width: 10rem;
+  height: 18.5rem;
+  margin: 0;
+}
+
+.book {
+  width: 100%;
+}
+
+.book-fig {
+  margin: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.book-buy {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  border-style: solid;
+}
+
+.plus {
+  width: 90%;
+  padding-top: 0.2rem;
+  padding-left: 0.05rem;
+  justify-self: center;
+}
+
+.book-info {
+  display: flex;
+  color: black;
+  gap: 4rem;
+  margin-top: 0.6rem;
+}
+
+.book-price {
+  margin: 0;
+  margin-left: 1rem;
+  font-family: "Karla", serif;
+  font-size: 1rem;
+  padding-top: 0.1rem;
+}
+
+figcaption {
+  color: rgb(68, 68, 68);
+  font-family: "Karla", serif;
+  font-size: 0.8rem;
+}
+
+figcaption p {
+  margin: 0;
+}
+
+.book-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
 }
