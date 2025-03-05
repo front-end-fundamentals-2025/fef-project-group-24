@@ -356,3 +356,127 @@ figcaption p {
   font-weight: bold;
   color: black;
 }
+
+/* Product detail */
+
+.container-detail {
+  display: grid;
+  grid-template-areas: "img text";
+  justify-content: center;
+}
+
+.image-dune {
+  height: 100%;
+}
+.dune-detail {
+  height: 35rem;
+}
+
+.dune-left {
+  grid-area: img;
+}
+
+.dune-text {
+  grid-area: text;
+}
+
+.detail-info {
+  font-family: "Karla", serif;
+  width: 20rem;
+}
+
+.title-dune {
+  font-family: "Karla", serif;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0.6rem;
+}
+
+.frank-dune {
+  font-family: "Karla", serif;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.detail-price {
+  display: flex;
+  gap: 8rem;
+}
+
+.price-font {
+  font-family: "Karla", serif;
+  font-size: 1.2rem;
+}
+
+#add-cart {
+  margin-top: 0.5rem;
+  width: 8rem;
+  height: 3rem;
+  font-family: "Karla", serif;
+  font-size: 1rem;
+  color: white;
+  border: solid rgb(10, 40, 91);
+  border-radius: 0.3rem;
+  background-color: rgb(10, 40, 91);
+}
+
+/* Shopping cart */
+
+.container-cart {
+  display: grid;
+  grid-template-areas: "color1 buy color2";
+}
+
+.cart-page {
+  grid-area: buy;
+  width: 30rem;
+  height: 40rem;
+}
+
+.cart2 {
+  grid-area: color1;
+  background-color: rgba(14, 53, 121, 0.726);
+}
+
+.cart3 {
+  grid-area: color2;
+  background-color: rgba(14, 53, 121, 0.726);
+}
+
+.no-margin {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.cart-book {
+  width: 10rem;
+}
+
+.book-buying {
+  width: 100%;
+}
+
+.display-side {
+  display: flex;
+  gap: 1rem;
+}
+
+.minus {
+  margin-top: 7.5rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 2rem;
+}
+
+.plus {
+  margin-top: 7.5rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 2rem;
+}
+
+.number {
+  margin-top: 8rem;
+  font-family: "Karla", serif;
+  font-size: 1.1rem;
+}
