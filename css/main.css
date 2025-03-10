@@ -632,6 +632,11 @@ figcaption p {
   gap: 1rem;
 }
 
+.display-side-two {
+  display: flex;
+  gap: 1rem;
+}
+
 .minus {
   margin-top: 0.8rem;
   height: 2rem;
