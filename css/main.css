@@ -627,13 +627,13 @@ figcaption p {
   width: 100%;
 }
 
-.display-side {
-  display: flex;
+#dune-display {
+  display: none;
   gap: 1rem;
 }
 
-.display-side-two {
-  display: flex;
+#babel-display {
+  display: none;
   gap: 1rem;
 }
 
