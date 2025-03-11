@@ -156,6 +156,12 @@ body {
   width: 12rem;
   height: 4rem;
 }
+.balloon-size {
+  width: 20rem;
+}
+.ballon-snake {
+  width: 100%;
+}
 
 @media screen and (max-width: 726px) {
   .right {
