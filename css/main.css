@@ -109,11 +109,14 @@ body {
   background-color: rgb(238, 221, 255);
   border-radius: 0.2rem;
   justify-content: center;
+  width: 60vw;
 }
 
 .right {
   background-color: rgb(221, 255, 222);
   border-radius: 0.2rem;
+  height: 50rem;
+  width: 40vw;
 }
 
 .container-text {
@@ -156,16 +159,61 @@ body {
   width: 12rem;
   height: 4rem;
 }
+
 .balloon-size {
-  width: 20rem;
-}
-.ballon-snake {
-  width: 100%;
+  justify-content: center;
 }
 
-@media screen and (max-width: 726px) {
+.ballon-snake {
+  display: block;
+  margin: auto;
+  width: 10rem;
+  text-align: center;
+  animation-name: snake-balloon, snake-balloonn;
+  animation-duration: 5.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes snake-balloon {
+  0% {
+    transform: translateY(14rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes snake-balloonn {
+  0% {
+    padding-left: 5rem;
+  }
+
+  25% {
+    padding-left: 0rem;
+  }
+
+  50% {
+    padding-right: 5rem;
+  }
+
+  75% {
+    padding-left: 0rem;
+  }
+
+  100% {
+    padding-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .right {
-    height: 6rem;
+    height: 40rem;
+    width: 100%;
+  }
+  .left {
+    width: 100%;
   }
   .container {
     display: grid;
@@ -178,6 +226,12 @@ body {
 @media screen and (max-width: 450px) {
   .home-text {
     width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ballon-snake {
+    width: 13rem;
   }
 }
 
@@ -405,6 +459,7 @@ footer p {
   height: 1.5rem;
   border-radius: 1rem;
   border-style: solid;
+  background-color: rgb(222, 225, 224);
 }
 
 .plus {
@@ -568,6 +623,12 @@ figcaption p {
   border: solid rgb(10, 40, 91);
   border-radius: 0.3rem;
   background-color: rgb(10, 40, 91);
+  transition-duration: 0.3s;
+}
+#add-cart:hover {
+  color: rgb(10, 40, 91);
+  border: solid rgb(10, 40, 91);
+  background-color: white;
 }
 
 @media screen and (max-width: 880px) {
@@ -708,7 +769,8 @@ figcaption p {
 }
 
 .buy-now-button {
-  margin-left: 30rem;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   width: 6rem;
   height: 2.5rem;
@@ -718,4 +780,22 @@ figcaption p {
   border: solid rgb(10, 40, 91);
   border-radius: 0.3rem;
   background-color: rgb(10, 40, 91);
+  transition-duration: 0.3s;
+}
+
+.buy-now-button:hover {
+  color: rgb(10, 40, 91);
+  background-color: white;
+}
+
+@media screen and (max-width: 420px) {
+  .cart-book {
+    width: 6rem;
+    height: 12rem;
+    margin-right: 0.5rem;
+  }
+
+  .cart-title {
+    margin-top: 1rem;
+  }
 }
