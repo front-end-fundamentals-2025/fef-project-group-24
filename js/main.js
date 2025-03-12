@@ -1,6 +1,18 @@
 let books = JSON.parse(localStorage.bookInCart || "[]");
 let babels = JSON.parse(localStorage.babels || "[]");
 
+/*
+const duneAdd = document.getElementById("dune-add-cart");
+
+duneAdd.addEventListener("click", function () {
+  document.getElementById("navigation-shopping").src =
+    "images/shopping-dot.png";
+});
+*/
+
+let w = window.innerWidth;
+console.log(w);
+
 // DUNE
 if (
   document.getElementById("add-cart") ||

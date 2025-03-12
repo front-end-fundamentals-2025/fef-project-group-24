@@ -58,7 +58,7 @@ ul {
   width: 1.35rem;
 }
 
-.navigation-shopping {
+#navigation-shopping {
   width: 2.2rem;
 }
 
@@ -398,7 +398,7 @@ footer p {
     font-size: 1.5rem;
   }
   .line-fig {
-    width: 80rem;
+    width: 70rem;
   }
   .book-header-fig {
     width: 75%;
@@ -458,8 +458,8 @@ footer p {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 1rem;
-  border-style: solid;
-  background-color: rgb(222, 225, 224);
+  border: solid rgb(218, 218, 218);
+  background-color: rgb(230, 230, 230);
 }
 
 .plus {
@@ -498,6 +498,10 @@ figcaption p {
   font-size: 1.1rem;
   font-weight: bold;
   color: black;
+}
+
+#buy-babel:hover {
+  background-color: rgb(164, 164, 164);
 }
 
 @media screen and (min-width: 1260px) {
