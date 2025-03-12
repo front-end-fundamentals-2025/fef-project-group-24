@@ -1,23 +1,84 @@
 let books = JSON.parse(localStorage.bookInCart || "[]");
 let babels = JSON.parse(localStorage.babels || "[]");
+let atlas = JSON.parse(localStorage.atlas || "[]");
 
-/*
-const duneAdd = document.getElementById("dune-add-cart");
+// the following function "changeText" was taken from: https://www.w3schools.com/howto/howto_js_media_queries.asp
 
-duneAdd.addEventListener("click", function () {
-  document.getElementById("navigation-shopping").src =
-    "images/shopping-dot.png";
-});
-*/
+if (document.getElementById("mirror")) {
+  let w = window.matchMedia("(max-width: 1260px)");
 
-let w = window.innerWidth;
-console.log(w);
+  function changeTextMirror(w) {
+    if (w.matches) {
+      document.getElementById("mirror").innerText = "The Dark Mir.";
+    } else {
+      document.getElementById("mirror").innerText = "The Dark Mirror";
+    }
+  }
+
+  function changeTextHurr(w) {
+    if (w.matches) {
+      document.getElementById("hurricane").innerText = "The Hurricane..";
+    } else {
+      document.getElementById("hurricane").innerText = "The Hurricane Wars";
+    }
+  }
+
+  function changeTextPiory(w) {
+    if (w.matches) {
+      document.getElementById("priory").innerText = "The Priory of..";
+    } else {
+      document.getElementById("priory").innerText =
+        "The Priory of the Orange..";
+    }
+  }
+
+  function changeTextWhisp(w) {
+    if (w.matches) {
+      document.getElementById("whisp").innerText = "Under the Wh..";
+    } else {
+      document.getElementById("whisp").innerText = "Under the Whispering..";
+    }
+  }
+
+  function changeTextPrince(w) {
+    if (w.matches) {
+      document.getElementById("prince").innerText = "The Cruel Prin..";
+    } else {
+      document.getElementById("prince").innerText = "The Cruel Prince";
+    }
+  }
+
+  changeTextMirror(w);
+  changeTextHurr(w);
+  changeTextPiory(w);
+  changeTextWhisp(w);
+  changeTextPrince(w);
+
+  w.addEventListener("change", function () {
+    changeTextMirror(w);
+    changeTextHurr(w);
+    changeTextPiory(w);
+    changeTextWhisp(w);
+    changeTextPrince(w);
+  });
+}
 
 // DUNE
 if (
   document.getElementById("add-cart") ||
-  document.getElementById("dune-counter")
+  document.getElementById("dune-counter") ||
+  document.getElementById("buy-dune")
 ) {
+  if (document.getElementById("buy-dune")) {
+    const duneQuickBuy = document.getElementById("buy-dune");
+
+    duneQuickBuy.addEventListener("click", function () {
+      books.push("Dune");
+
+      localStorage.bookInCart = JSON.stringify(books);
+    });
+  }
+
   if (document.getElementById("add-cart")) {
     const duneButton = document.getElementById("add-cart");
 
@@ -126,6 +187,65 @@ if (
 
       if (babelNumber.length === 0) {
         babelSection.style.display = "none";
+      }
+    });
+  }
+}
+
+// THE ATLAS SIX
+if (
+  document.getElementById("buy-atlas") ||
+  document.getElementById("atlas-counter")
+) {
+  if (document.getElementById("buy-atlas")) {
+    const atlasAdd = document.getElementById("buy-atlas");
+
+    atlasAdd.addEventListener("click", function () {
+      atlas.push("Atlas");
+
+      localStorage.atlas = JSON.stringify(atlas);
+    });
+  }
+
+  if (document.getElementById("atlas-counter")) {
+    const atlasCounter = document.getElementById("atlas-counter");
+    const atlasAdd = document.getElementById("atlas-add-cart");
+    const atlasDelete = document.getElementById("atlas-delete-cart");
+    const atlasSection = document.getElementById("atlas-display");
+    const atlasPrice = document.getElementById("atlas-price");
+
+    let atlasAmount = JSON.parse(localStorage.atlas);
+    atlasCounter.innerText = atlasAmount.length;
+
+    atlasPrice.innerText = 130 * atlasAmount.length + " kr";
+
+    if (atlasAmount.length > 0) {
+      atlasSection.style.display = "flex";
+    }
+
+    atlasAdd.addEventListener("click", function () {
+      atlasAmount.push("Atlas");
+      localStorage.atlas = JSON.stringify(atlasAmount);
+
+      let atlasNumber = JSON.parse(localStorage.atlas);
+      atlasCounter.innerText = atlasNumber.length;
+      atlasPrice.innerText = 130 * atlasAmount.length + " kr";
+    });
+
+    atlasDelete.addEventListener("click", function () {
+      if (atlasCounter.innerText > 0) {
+        atlasAmount.pop();
+        localStorage.atlas = JSON.stringify(atlasAmount);
+
+        let atlasNumber = JSON.parse(localStorage.atlas);
+        atlasCounter.innerText = atlasNumber.length;
+        atlasPrice.innerText = 130 * atlasAmount.length + " kr";
+      }
+
+      let atlasNumber = JSON.parse(localStorage.atlas);
+
+      if (atlasNumber.length === 0) {
+        atlasSection.style.display = "none";
       }
     });
   }

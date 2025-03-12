@@ -29,73 +29,101 @@
       <nav>
         <ul>
           <a href="categories.html">
-            <img class="navigation" src="images/Homee.png" alt="" />
+            <img class="navigation" src="images/Homee.png" alt="house icon" />
           </a>
           <a href="#">
-            <img class="navigation-spy" src="images/spyy.png" alt="" />
+            <img
+              class="navigation-spy"
+              src="images/spyy.png"
+              alt="spyglass icon"
+            />
           </a>
           <a href="#">
-            <img class="navigation-login" src="images/Accountt.png" alt="" />
+            <img
+              class="navigation-login"
+              src="images/Accountt.png"
+              alt="account icon"
+            />
           </a>
           <a href="shopping-cart.html">
-            <img id="navigation-shopping" src="images/shoppingg.png" alt="" />
+            <img
+              id="navigation-shopping"
+              src="images/shoppingg.png"
+              alt="shopping cart icon"
+            />
           </a>
         </ul>
       </nav>
     </header>
     <main>
       <section class="container-products">
-        <a class="products" href="product-detail.html">
-          <figure class="book-fig">
-            <img class="book" src="books/dune.jpg" alt="" />
-            <figcaption>
-              <p class="book-title">Dune</p>
-              <p>Frank Herbert</p>
-            </figcaption>
-          </figure>
-          <section class="book-info">
-            <p class="book-price">130 kr</p>
-            <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
-            </button>
-          </section>
-        </a>
+        <!-- the three first sections are coded differently to be able to click button, and access next page -->
 
-        <a class="products" href="#">
-          <figure class="book-fig">
-            <img class="book" src="books/atlas-six.jpg" alt="" />
-            <figcaption>
-              <p class="book-title">The Atlas Six</p>
-              <p>Olivia Blake</p>
-            </figcaption>
-          </figure>
+        <section class="products">
+          <a class="book-link" href="product-detail.html">
+            <figure class="book-fig">
+              <img class="book" src="books/dune.jpg" alt="dune book cover" />
+              <figcaption>
+                <p class="book-title">Dune</p>
+                <p>Frank Herbert</p>
+              </figcaption>
+            </figure>
+          </a>
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy" id="buy-dune">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
-        </a>
+        </section>
 
-        <a class="products" href="#">
-          <figure class="book-fig">
-            <img class="book" src="books/babel.jpg" alt="" />
-            <figcaption>
-              <p class="book-title">Babel</p>
-              <p>R.F Kuang</p>
-            </figcaption>
-          </figure>
+        <section class="products">
+          <a class="book-link" href="#">
+            <figure class="book-fig">
+              <img
+                class="book"
+                src="books/atlas-six.jpg"
+                alt="the atlas six book cover"
+              />
+              <figcaption>
+                <p class="book-title">The Atlas Six</p>
+                <p>Olivia Blake</p>
+              </figcaption>
+            </figure>
+          </a>
+          <section class="book-info">
+            <p class="book-price">130 kr</p>
+            <button class="book-buy" id="buy-atlas">
+              <img class="plus" src="books/32339.png" alt="plus sign" />
+            </button>
+          </section>
+        </section>
+
+        <section class="products">
+          <a class="book-link" href="#">
+            <figure class="book-fig">
+              <img class="book" src="books/babel.jpg" alt="babel book cover" />
+              <figcaption>
+                <p class="book-title">Babel</p>
+                <p>R.F Kuang</p>
+              </figcaption>
+            </figure>
+          </a>
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy" id="buy-babel">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
-        </a>
+        </section>
 
         <a class="products" href="#">
           <figure class="book-fig">
-            <img class="book" src="books/graceling.jpg" alt="" />
+            <img
+              class="book"
+              src="books/graceling.jpg"
+              alt="graceling book cover"
+            />
             <figcaption>
               <p class="book-title">Graceling</p>
               <p>Kristin Cashore</p>
@@ -104,14 +132,18 @@
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>
 
         <a class="products" href="#">
           <figure class="book-fig">
-            <img class="book" src="books/dark-mirror.jpg" alt="" />
+            <img
+              class="book"
+              src="books/dark-mirror.jpg"
+              alt="the dark mirror book cover"
+            />
             <figcaption>
               <p class="book-title" id="mirror">The Dark Mir..</p>
               <p>Samantha Shannon</p>
@@ -120,46 +152,58 @@
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>
 
         <a class="products" href="#">
           <figure class="book-fig">
-            <img class="book" src="books/hurricane-wars.jpg" alt="" />
+            <img
+              class="book"
+              src="books/hurricane-wars.jpg"
+              alt="the hurricane wars book cover"
+            />
             <figcaption>
-              <p class="book-title">The Hurricane..</p>
+              <p class="book-title" id="hurricane">The Hurricane..</p>
               <p>Thea Guanzon</p>
             </figcaption>
           </figure>
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>
 
         <a class="products" href="#">
           <figure class="book-fig">
-            <img class="book" src="books/orange-tree.jpg" alt="" />
+            <img
+              class="book"
+              src="books/orange-tree.jpg"
+              alt="the priory of the orange tree book cover"
+            />
             <figcaption>
-              <p class="book-title">The Priory of..</p>
+              <p class="book-title" id="priory">The Priory of..</p>
               <p>Samantha Shannon</p>
             </figcaption>
           </figure>
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>
 
         <a class="products" href="#">
           <figure class="book-fig">
-            <img class="book" src="books/poppy-war.jpg" alt="" />
+            <img
+              class="book"
+              src="books/poppy-war.jpg"
+              alt="the poppy war book cover"
+            />
             <figcaption>
               <p class="book-title">The Poppy War</p>
               <p>R.F Kuang</p>
@@ -168,14 +212,18 @@
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>
 
         <a class="products" href="#">
           <figure class="book-fig">
-            <img class="book" src="books/piransei.jpg" alt="" />
+            <img
+              class="book"
+              src="books/piransei.jpg"
+              alt="piranesi book cover"
+            />
             <figcaption>
               <p class="book-title">Piranesi</p>
               <p>Susanne Clarke</p>
@@ -184,7 +232,7 @@
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>
@@ -194,24 +242,28 @@
             <img
               class="book"
               src="books/under-the-whispering-door.jpg"
-              alt=""
+              alt="under the whispering door book cover"
             />
             <figcaption>
-              <p class="book-title">Under the Wh..</p>
+              <p class="book-title" id="whisp">Under the Wh..</p>
               <p>TJ Klune</p>
             </figcaption>
           </figure>
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>
 
         <a class="products" href="#">
           <figure class="book-fig">
-            <img class="book" src="books/spellslinger.jpg" alt="" />
+            <img
+              class="book"
+              src="books/spellslinger.jpg"
+              alt="spellslinger book cover"
+            />
             <figcaption>
               <p class="book-title">Spellslinger</p>
               <p>Sebastien De Castell</p>
@@ -220,23 +272,27 @@
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>
 
         <a class="products" href="#">
           <figure class="book-fig">
-            <img class="book" src="books/the-cruel-prince.jpg" alt="" />
+            <img
+              class="book"
+              src="books/the-cruel-prince.jpg"
+              alt="the cruel prince book cover"
+            />
             <figcaption>
-              <p class="book-title">The Cruel Prin..</p>
+              <p class="book-title" id="prince">The Cruel Prin..</p>
               <p>Holly Black</p>
             </figcaption>
           </figure>
           <section class="book-info">
             <p class="book-price">130 kr</p>
             <button class="book-buy">
-              <img class="plus" src="books/32339.png" alt="" />
+              <img class="plus" src="books/32339.png" alt="plus sign" />
             </button>
           </section>
         </a>

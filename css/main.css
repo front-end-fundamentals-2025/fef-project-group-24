@@ -449,6 +449,10 @@ footer p {
   width: 100%;
 }
 
+.book-link {
+  margin: 0;
+}
+
 .book-fig {
   margin: 1rem;
   margin-bottom: 0.2rem;
@@ -501,6 +505,14 @@ figcaption p {
 }
 
 #buy-babel:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+#buy-atlas:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+#buy-dune:hover {
   background-color: rgb(164, 164, 164);
 }
 
@@ -699,6 +711,11 @@ figcaption p {
 }
 
 #dune-display {
+  display: none;
+  gap: 1rem;
+}
+
+#atlas-display {
   display: none;
   gap: 1rem;
 }
