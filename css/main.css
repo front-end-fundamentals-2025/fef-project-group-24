@@ -424,6 +424,12 @@ footer p {
 }
 
 /* Products */
+.fantasy-title {
+  text-align: center;
+  font-family: "Karla", serif;
+  font-size: 2.5rem;
+}
+
 .container-products {
   display: grid;
   grid-template-areas:
@@ -464,12 +470,11 @@ footer p {
   border-radius: 1rem;
   border: solid rgb(218, 218, 218);
   background-color: rgb(230, 230, 230);
+  padding: 0rem;
 }
 
 .plus {
-  width: 90%;
-  padding-top: 0.2rem;
-  padding-left: 0.05rem;
+  width: 50%;
   justify-self: center;
 }
 
